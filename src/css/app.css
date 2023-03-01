@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 0px;
 }
 
 header {
@@ -9,20 +9,20 @@ header {
 }
 
 .header-region {
-    width: 980px;
-    background-color: white;
+    width: auto;
+    background-color: transparent;
     margin: auto;
 }
 
 .header-left {
     float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 52px;
+    height: 52px;
 }
 
 .logo {
-    margin-right: 5px;
     float: left;
+    margin: 5px;
 }
 
 .logo img {
@@ -32,17 +32,24 @@ header {
 .main-menu {
     float: left;
 }
+
 .main-menu-item {
     list-style: none;
     font-size: 24px;    
     float: left;
     line-height: 1;
-    margin: 18px;
+    margin: 10px;
     vertical-align:middle;    
 }
+
 .main-menu-item:hover{
     color: green;
 }
+.main-menu-item::selection{
+    color: green;
+    font-weight: 300;
+}
+
 .contents{
     margin: 10px;
 }
