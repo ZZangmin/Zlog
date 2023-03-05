@@ -9,14 +9,37 @@
     <script src="https://zzangmin.github.io/Zlog/src/js/app.js"></script>
 </head>
 <body>
-    <div id="layout">
-
-        <div id="main" class="contents">
-
+    <header>
+        <div class="header-region clearfix">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="https://zzangmin.github.io/Zlog/src/resources/imgs/logo.png" alt="로고" width="64">                
+                </div>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li class="main-menu-item">Main</li>
+                    <li class="main-menu-item">Zzangmin</li>
+                    <li class="main-menu-item">Currier</li>
+                    <li class="main-menu-item">Favorite</li>
+                    <li class="main-menu-item">Contact</li>
+                </ul>
+            </nav>
+                <div class="container-right">
+                    <div class="logo"></div>
+                <div class="menu"></div>
+            </div>
         </div>
+    </header>
+    <div id="main">
+
     </div>
+    <div id="footer">
+
+    </div>
+    <script>
+        // importPage("src/html/pages/main");
+        importPage("https://zzangmin.github.io/Zlog/src/html/pages/","main");
+    </script>
 </body>
-<script>
-    importPage("https://zzangmin.github.io/Zlog/src/html/","layout");
-</script>
 </html>
