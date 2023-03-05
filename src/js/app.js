@@ -6,7 +6,7 @@ async function importPage(target) {
     document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
 }
  
-async function importPage(path,target) {
+async function importMainPage(path,target) {
     document.querySelector('#' + 'main').innerHTML = await fetchHtmlAsText(path+target + '.html');
 }
 function Navigation(element)
@@ -14,5 +14,5 @@ function Navigation(element)
     console.log(element + element.innerText.toLowerCase());
     target = element.innerText.toLowerCase();
     path ='https://zzangmin.github.io/Zlog/src/html/pages/';
-    importPage(path,target);
+    importMainPage(path,target);
 }
