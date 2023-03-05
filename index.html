@@ -18,7 +18,7 @@
             </div>
             <nav>
                 <ul class="main-menu">
-                    <li class="main-menu-item" onclick="Navigation(this)">Main<li>
+                    <li class="main-menu-item" onclick="Navigation(this)">Main</li>
                     <li class="main-menu-item" onclick="Navigation(this)">Zzangmin</li>
                     <li class="main-menu-item">Currier</li>
                     <li class="main-menu-item">Favorite</li>
@@ -34,11 +34,12 @@
 
     </div>
     <script>
-        function Navigation(element) {
+        function Navigation(element)
+        {
             console.log(element + element.innerText.toLowerCase());
-            var target = element.innerText.toLowerCase();
-            path = 'https://zzangmin.github.io/Zlog/src/html/pages/';
-            importPage(path, target);
+            vartarget = element.innerText.toLowerCase();
+            path ='https://zzangmin.github.io/Zlog/src/html/pages/';
+            importPage(path,target);
         }
         // importPage("src/html/pages/main");
         importPage("https://zzangmin.github.io/Zlog/src/html/pages/", "main");

@@ -5,10 +5,7 @@ async function fetchHtmlAsText(url) {
 async function importPage(target) {
     document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
 }
-
-async function importPage(path,target) {
-    document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(path+target + '.html');
-}
+ 
 async function importPage(path,target) {
     document.querySelector('#' + 'main').innerHTML = await fetchHtmlAsText(path+target + '.html');
 }
