@@ -9,7 +9,7 @@ header {
 }
 
 .header-region {
-    width: auto;
+    width: 1024px;
     background-color: transparent;
     margin: auto;
 }
