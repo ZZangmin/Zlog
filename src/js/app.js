@@ -12,7 +12,7 @@ async function importPage(path,target) {
 function Navigation(element)
 {
     console.log(element + element.innerText.toLowerCase());
-    var target = element.innerText.toLowerCase();
+    target = element.innerText.toLowerCase();
     path ='https://zzangmin.github.io/Zlog/src/html/pages/';
     importPage(path,target);
 }
