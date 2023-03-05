@@ -9,3 +9,13 @@ async function importPage(target) {
 async function importPage(path,target) {
     document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(path+target + '.html');
 }
+async function importPage(path,target) {
+    document.querySelector('#' + 'main').innerHTML = await fetchHtmlAsText(path+target + '.html');
+}
+function Navigation(element)
+{
+    console.log(element + element.innerText.toLowerCase());
+    vartarget = element.innerText.toLowerCase();
+    path ='https://zzangmin.github.io/Zlog/src/html/pages/';
+    importPage(path,target);
+}

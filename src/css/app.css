@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: auto;
+	font-family: 'SDSamliphopangche_Outline';
     padding: 0px;
 }
 
@@ -9,13 +17,11 @@ header {
 }
 
 .header-region {
-    width: 1024px;
     background-color: transparent;
     margin: auto;
 }
 
 .header-left {
-    float: left;
     width: 52px;
     height: 52px;
 }
