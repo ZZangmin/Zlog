@@ -51,6 +51,7 @@ header {
 
 .main-menu-item:hover{
     color: green;
+    cursor : pointer;
 }
 .main-menu-item::selection{
     color: green;

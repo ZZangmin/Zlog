@@ -13,6 +13,6 @@ function Navigation(element)
 {
     console.log(element + element.innerText.toLowerCase());
     target = element.innerText.toLowerCase();
-    path ='https://zzangmin.github.io/Zlog/src/html/pages/';
+    path ='./src/html/pages/';
     importMainPage(path,target);
 }
