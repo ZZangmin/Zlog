@@ -11,8 +11,7 @@ async function importMainPage(path,target) {
 }
 function Navigation(element)
 {
-    console.log(element + element.innerText.toLowerCase());
-    target = element.innerText.toLowerCase();
+    target = element.toLowerCase();
     path ='./src/html/pages/';
     importMainPage(path,target);
 }

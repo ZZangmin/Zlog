@@ -7,24 +7,36 @@
     <title>ZLog</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./src/css/app.css'>
+    <link rel="icon" href="./src/resources/imgs/pavicon.png">
     <script type="text/javascript" src="./src/js/app.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="header-region clearfix">
-            <div class="logo">
-                <img src="./src/resources/imgs/logo.png" alt="로고" width="64">
+        <div class="header-border clearfix">
+            <div class="topMenu">
+                <img src="./src/resources/imgs/pavicon.png" alt="로고" onclick="Navigation('Main')" />
+                <div class="search-region">
+                    <div class="search-box">
+                        <input type="text" placeholder="검색">
+                        </input>
+                        <button class="circle-button">
+                            🔍
+                        </button>
+                    </div>
+                </div>
             </div>
-            <nav>
+        </div>
+        <div class="header-region clearfix">
+            <div class="main-menu">
                 <ul class="main-menu">
-                    <li class="main-menu-item" onclick="Navigation(this)">Main</li>
-                    <li class="main-menu-item" onclick="Navigation(this)">Zzangmin</li>
-                    <li class="main-menu-item">Currier</li>
-                    <li class="main-menu-item">Favorite</li>
-                    <li class="main-menu-item">Contact</li>
+                    <li onclick="Navigation('Main')">메인</li>
+                    <li onclick="Navigation('ZZangmin')">짱민</li>
+                    <li onclick="Navigation('Currier')">경력</li>
+                    <li onclick="Navigation('Favorite')">취미</li>
+                    <li onclick="Navigation('Contact')">연락처</li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <div id="main">
